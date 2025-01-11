@@ -54,6 +54,16 @@ app.use('/auth', authController);
 app.use(isSignedIn);
 app.use('/users/:userId/tasks', tasksController)
 
+app.put("/tasks/:taskId", async (req, res) => {
+  if (req.body.priority === "on") {
+    req.body.priority = true;
+  } else {
+    req.body.priority = false;
+  }
+  
+  await Fruit.findByIdAndUpdate(req.params.taskId, req.body);
+  res.redirect(`/tasks/${req.params.taskId}`);
+});
 
 
 app.listen(port, () => {
