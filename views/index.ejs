@@ -9,8 +9,8 @@
   </head>
   <body>
     <% if (user) { %>
-      <h1>Welcome to the app, <%= user.username %>!</h1>
-      <a href="/auth/sign-out">Sign out</a>
+      <h1><%= user.username %>! Daily Planner</h1>
+      <!-- <a href="/auth/sign-out">Sign out</a> -->
       <% } else { %>
       <h1>DAILY PLANNER</h1>
       <p>

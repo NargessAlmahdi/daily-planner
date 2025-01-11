@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing <% task.title %></title>
+</head>
+<body>
+    <h1>Edit Task <%= task.title%></h1>
+    <form
+    action="/users/<%= user._id %>/tasks/<%= task._id %>?_method=PUT"
+    method="POST">
+
+    <label for="title">Task Title:</label>
+    <input 
+    type="text" 
+    name="title" 
+    id="title" 
+    value="<%= task.title%>"/>
+
+    <label for="date">Date:</label>
+    <input 
+    type="date" 
+    name="date" 
+    id="date" 
+    value="<%= task.title%>"/>
+
+    <label for="details">Details:</label>
+        <textarea 
+        name="text" 
+        id="details"
+        value="<%= task.details%>"></textarea>
+
+        <label for="priority">Priority?</label>
+        <input 
+        type="checkbox" 
+        name="priority" 
+        id="priority" <%if (task.priority){%>checked<%} %>/>
+    
+        <button type="submit">Update Task</button>
+
+</form>
+
+</body>
+</html>
