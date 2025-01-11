@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><% task.title %></title>
 </head>
 <body>
+    <h1><%= task.title%> - <%task.date%> </h1>
+    <% if (task.details) { %>
+        <p>Details: <%= task.details %></p>
+        <% } %>
     
+           <!-- UPDATE APP -->
+    <a href="/users/<%= user._id %>/tasks/<%= task._id %>/edit">
+        Edit this application
+      </a>
+  
+      <!-- DELETE APP -->
+      <form
+      action="/users/<%= user._id %>/tasks/<%= task._id %>?_method=DELETE"
+      method="POST"
+      >
+        <button type="submit">Delete this Task</button>
+ </form>
 </body>
 </html>

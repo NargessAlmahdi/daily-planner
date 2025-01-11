@@ -5,18 +5,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Daily Planner</title>
   </head>
   <body>
-    <% if (user) { %>
-      <h1><%= user.username %>! Daily Planner</h1>
-      <!-- <a href="/auth/sign-out">Sign out</a> -->
-      <% } else { %>
-      <h1>DAILY PLANNER</h1>
+
+    <h1>Daily Planner</h1>
+    <p>Planning made easy!</p>
       <p>
         <a href="/auth/sign-up">Sign up</a> or <a href="/auth/log-in">Log in</a>.
       </p>
-      <% } %>
 
   </body>
 </html>

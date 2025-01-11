@@ -40,8 +40,8 @@ app.use(addUserToViews);
 
 // Public Routes
 app.get('/', async (req, res) => {
-  if (req.sessionStore.user){
-    res.redirect(`/users/${req.sessionStore.user._id}/tasks`)
+  if (req.session.user){
+    res.redirect(`/users/${req.session.user._id}/tasks`)
   }else{
   res.render('index.ejs');
   }

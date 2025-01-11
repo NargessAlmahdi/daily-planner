@@ -15,7 +15,7 @@
         <%tasks.forEach((task)=>{%>
         <li>
             <a href="/users/<%= user._id%>/tasks/<%= task._id%>">
-                <%= application.title%> - <%= task.date%>
+                <%= task.title%> - <%= task.date%>
             </a>
         </li>
 
