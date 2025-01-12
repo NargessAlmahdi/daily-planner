@@ -6,7 +6,7 @@
     <title><% task.title %></title>
 </head>
 <body>
-    <h1><%= task.title%> - <%task.date%> </h1>
+    <h1><%= task.title%> - <%=task.date%></h1>
     <% if (task.details) { %>
         <p>Details: <%= task.details %></p>
         <% } %>
@@ -21,7 +21,7 @@
       action="/users/<%= user._id %>/tasks/<%= task._id %>?_method=DELETE"
       method="POST"
       >
-        <button type="submit">Delete this Task</button>
+        <button type="submit">Delete Task</button>
  </form>
 </body>
 </html>

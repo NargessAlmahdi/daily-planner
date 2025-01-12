@@ -16,9 +16,7 @@ const taskSchema = new mongoose.Schema({
   }, 
 
   priority: {
-    name: String,
-    priority: Boolean,
-    
+    type: Boolean
   },
 })
 
