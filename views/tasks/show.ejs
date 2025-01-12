@@ -6,6 +6,7 @@
     <title><% task.title %></title>
 </head>
 <body>
+    <%- include('../partials/_navbar.ejs') %>
     <h1><%= task.title%> - <%=task.date%></h1>
     <% if (task.details) { %>
         <p>Details: <%= task.details %></p>

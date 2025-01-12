@@ -23,6 +23,12 @@ router.get('/new', async (req, res) => {
 router.post('/', async (req, res) => {
     try{
         const currentUser = await User.findById(req.session.user._id)
+        if (req.body.priority === "on") {
+            req.body.priority = true;
+        } else {
+            req.body.priority = false;
+        }
+        
         currentUser.tasks.push(req.body)
         await currentUser.save()
         res.redirect(`/users/${currentUser._id}/tasks`)
@@ -88,21 +94,21 @@ router.get('/:taskId/edit', async (req, res) => {
       const currentUser = await User.findById(req.session.user._id);
       const task = currentUser.tasks.id(req.params.taskId);
 
-if (req.body.priority === "on") {
-    req.body.priority = true;
-  } else {
-    req.body.priority = false;
-  }
-
-      task.set(req.body);
-      await currentUser.save();
-      res.redirect(
-        `/users/${currentUser._id}/tasks/${req.params.taskId}`
-      );
-    } catch (error) {
-      console.log(error);
-      res.redirect('/');
+    if (req.body.priority === "on") {
+        req.body.priority = true;
+    } else {
+        req.body.priority = false;
     }
-  });
+
+    task.set(req.body);
+    await currentUser.save();
+    res.redirect(
+        `/users/${currentUser._id}/tasks/${req.params.taskId}`
+    );
+    } catch (error) {
+    console.log(error);
+    res.redirect('/');
+    }
+});
 
   module.exports = router;

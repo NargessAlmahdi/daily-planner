@@ -6,6 +6,7 @@
     <title>Editing <% task.title %></title>
 </head>
 <body>
+    <%- include('../partials/_navbar.ejs') %>
     <h1>Edit Task </h1>
         <h2><%= task.title%> - <%= task.date%></h2>
     <form action="/users/<%= user._id %>/tasks/<%= task._id %>?_method=PUT" method="POST">
