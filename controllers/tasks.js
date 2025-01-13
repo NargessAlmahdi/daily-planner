@@ -77,17 +77,6 @@ router.get('/:taskId/edit', async (req, res) => {
   });
 
 
-//   router.put("/:taskId", async (req, res) => {
-//     if (req.body.priority === "on") {
-//       req.body.priority = true;
-//     } else {
-//       req.body.priority = false;
-//     }
-    
-//     await task.findByIdAndUpdate(req.params.taskId, req.body);
-//     res.redirect(`/tasks/${req.params.taskId}`);
-//   });
-
 
   router.put('/:taskId', async (req, res) => {
     try {

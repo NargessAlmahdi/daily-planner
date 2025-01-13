@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'AcuminVariableConcept';
+    src: url('/typefaces/AcuminVariableConcept.otf') format('opentype');
+}
+
+
+body{
+
+    background-color: #487ad3;
+    /* display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw; */
+}
+
+
+/* VIEWS/INDEX.EJS */
+
+.index-body{
+    background-image: url('/images/mainpage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 200px;
+}
+
+.main-header{
+    font-family: 'AcuminVariableConcept', sans-serif;
+    font-variation-settings: "wght" 900, "wdth" 50;
+    font-size: 275px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.subheader{
+    font-family: 'poppins', sans-serif;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 110px;
+    padding-top: 400px;
+    /* justify-content: center;  
+    align-items: center;       */
+    /* position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.auth-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 0 200px 0 0;
+    padding-left: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(15%, -10%);
+  }
+
+  .signup-link,
+  .login-link {
+    font-family: 'poppins';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px 0;
+    border-radius: 10px;
+    width: 10em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.signup-link {
+    background-color: #ff7f02;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+
+  }
+  
+  .signup-link:hover {
+    background-color: #ffffff;
+  }
+  
+  .login-link {
+    background-color: #f7e807;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+
+  }
+  
+  .login-link:hover {
+    background-color: #ffffff;
+  }
+
+
+
+
