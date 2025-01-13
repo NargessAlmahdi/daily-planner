@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Log In</title>
   </head>
-  <body>
-    <h1>Log in</h1>
+  <body class= "body-in-up">
+    <div class="signin-in">
+    <h1>LOG IN</h1>
     <form action="/auth/sign-in" method="POST">
       <label for="username">Username:</label>
       <input type="text" name="username" id="username" />
       <label for="password">Password:</label>
       <input type="password" name="password" id="password" />
-      <button type="submit">Log in</button>
+      <button class="login2" type="submit">Log in</button>
+      <button class="signup2" type="submit">Sign up</button>
     </form>
+  </div>
   </body>
 </html>

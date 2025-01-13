@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Your Tasks</title>
 </head>
-<body>
-    <a href="/auth/sign-out">Sign Out</a>
-    <h1>DAILY PLANNER</h1>
-    <h2>Tasks for the day!</h2>
+<body class="body-index2">
+    <%- include('../partials/_navbar.ejs') %>
+    <!-- <a href="/auth/sign-out">Sign Out</a> -->
+    <div class="all-tasks-body">
+        <div class="all-tasks-header">
+    <h1>TODAY'S TASKS!</h1>
 
     <a href="/users/<%=user._id%>/tasks/new">Add New Task</a>
-
+        </div>
     <ul>
         <%tasks.forEach((task)=>{%>
         <li>
@@ -23,5 +25,6 @@
 
        <% })%>
     </ul>
+</div>
 </body>
 </html>

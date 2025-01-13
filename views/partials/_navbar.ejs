@@ -1,9 +1,24 @@
+<link rel="stylesheet" href="/stylesheets/partials.css" />
 <nav>
     <% if(user) { %>
-    <a href="/users/<%= user._id %>/tasks">Back</a>
+      <div class="navbar">
+      <h1 id="nav-header">DAILY PLANNER</h1>
+
+      <div class="authlink">
+    <a href="/users/<%= user._id %>/tasks">Tasks</a>
+
     <a href="/auth/sign-out">Sign Out</a>
+     </div>
+    </div>
+
     <% } else { %>
-    <a href="/auth/sign-in">Sign In</a>
-    <a href="/auth/sign-up">Sign Up</a>
+    <div class="navbar">  
+    <h1 id="nav-header">DAILY PLANNER</h1>
+
+    <div class="authlink">
+    <a class="log" href="/auth/sign-in">Log In</a>
+    <a class="sign" href="/auth/sign-up">Sign Up</a>
+    </div>
+  </div>
     <% } %>
   </nav>

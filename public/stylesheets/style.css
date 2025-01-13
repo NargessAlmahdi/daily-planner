@@ -28,6 +28,7 @@ body{
     font-family: 'AcuminVariableConcept', sans-serif;
     font-variation-settings: "wght" 900, "wdth" 50;
     font-size: 275px;
+    color: #2e2d33;
     display: flex;
     justify-content: center;  
     align-items: center;      
@@ -41,16 +42,11 @@ body{
 .subheader{
     font-family: 'poppins', sans-serif;
     font-size: 35px;
+    color: #2e2d33;
     display: flex;
     flex-direction: column;
     padding-left: 110px;
-    padding-top: 400px;
-    /* justify-content: center;  
-    align-items: center;       */
-    /* position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    padding-top: 220px;
 }
 
 .auth-links {
@@ -105,3 +101,144 @@ body{
 
 
 
+
+
+  /* VIEWS/AUTH/SIGN-UP.EJS */
+
+  .body-in-up{
+    background-image: url('/images/Signup-login.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 200px;
+  }
+
+  .signin-in,
+  .signup-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  h1 {
+    font-family: 'AcuminVariableConcept', sans-serif;
+    font-variation-settings: "wght" 900, "wdth" 50;
+    font-size: 90px;
+    color: #2e2d33;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  
+  form {
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 23px;
+    color: #2e2d33;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20em;
+    height: 50%;
+  }
+  
+  input {
+    border: 1px solid rgb(182, 182, 182);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .signup, .login {
+    font-family: 'poppins';
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 1.1em;
+  }
+  
+  .signup{
+    top: 20%;
+    left: 50%;
+    transform: translate(0%, 30%);
+    background-color: #ff7f02;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+  }
+
+  .signup:hover{
+    background-color: #ffffff;
+
+  }
+
+  .login{
+    background-color: #f7e807;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+  }
+
+.login:hover{
+    background-color: #ffffff;
+}
+
+
+  /* VIEWS/AUTH/SIGN-IN.EJS */
+
+  .signup2, .login2 {
+    font-family: 'poppins';
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 1.1em;
+  }
+  
+  .signup2{
+    
+    background-color: #ff7f02;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+  }
+
+  .signup2:hover{
+    background-color: #ffffff;
+
+  }
+
+  .login2{
+    top: 20%;
+    left: 50%;
+    transform: translate(0%, 30%);
+    background-color: #f7e807;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+  }
+
+.login2:hover{
+    background-color: #ffffff;
+}
+
+
+
+/* VIEWS/SHOW.EJS */
+
+.body-index2{
+    background-image: url('/images/tasksheet.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 200px;
+  }

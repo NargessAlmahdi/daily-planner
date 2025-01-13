@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'AcuminVariableConcept';
+    src: url('/typefaces/AcuminVariableConcept.otf') format('opentype');
+}
+
+.navbar {
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    padding: 5px 20px;
+    justify-content: space-between;
+    gap: 880px;
+    align-items: center;
+  }
+  
+  #nav-header {
+    color: #2e2d33;
+    margin: 0;
+    font-family: 'AcuminVariableConcept', sans-serif;
+    font-variation-settings: "wght" 400, "wdth" 50;
+    font-size: 50px;
+    padding-left: 90px;
+    padding-top: 100px;
+    white-space: nowrap;
+    
+  }
+  
+  .authlink {
+
+    font-family: 'poppins';
+    font-size: 23px;
+    margin: 0 15px;
+    text-align: center;
+    padding-top: 100px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+  }
+
+  .sign{
+    text-decoration: none !important;
+    color: #2e2d33;
+  }
+
+  .log{
+    text-decoration: none !important;
+    color: #2e2d33;
+  }
+  
+  .sign:hover{
+    font-weight: bold;
+  }
+
+  .log:hover{
+    font-weight: bold;
+  }
