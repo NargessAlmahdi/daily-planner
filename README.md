@@ -9,28 +9,25 @@ _A user-friendly daily planner designed to help you organize and track your task
 
 ## Getting Started
 
-### Play the Game
+### Try the daily planner out
 
-[Deployed Game Link](https://nargessalmahdi.github.io/Whack-A-Mole/)
+[Deployed Link](https://nargessalmahdi.github.io/Whack-A-Mole/)
 
-### How to Play
+### How to Use
 
-1. Click "START" to begin
-2. You have 30 seconds to hit the moles
-3. Each mole you hit earns you 10 points
-4. Try to set the new high score!
-
-### Planning Materials
-
-[View Planning Documents](https://trello.com/b/rAomHBEU/whack-a-mole)
+1. Log in or Sign up to create an account
+2. Add tasks to your task page
+3. Edit task when needed to
+4. Check off tasks as soon as you are done
+5. Delete tasks when no longer needed
 
 ----------
 
 ## Attributions
 
--   [Ranchers Font](https://fonts.google.com/share?selection.family=Ranchers)
+-   AcuminVariableConcept
 -   [Poppins Font](https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900)
--   [Background Music](https://www.youtube.com/watch?v=pXdrz1pB35Q)
+
 
 ----------
 
@@ -44,8 +41,9 @@ _A user-friendly daily planner designed to help you organize and track your task
 
 ## Next Steps
 
-- Add more sound effects to give the authentic feel of arcade games.
-- Implement a multiplayer mode.
+- Add different views where the user can view it (monthly, weekly, or daily)
 - Create a mobile-friendly interface.
-- Add different difficulty levels.
+- Attaching documents
+- Sharing Calender
+- Connect with other calenders
 ----------
