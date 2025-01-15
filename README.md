@@ -7,12 +7,6 @@ _A user-friendly daily planner designed to help you organize and track your task
 
 ----------
 
-## Getting Started
-
-### Try the daily planner out
-
-[Deployed Link](https://nargessalmahdi.github.io/Whack-A-Mole/)
-
 ### How to Use
 
 1. Log in or Sign up to create an account
