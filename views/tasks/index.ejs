@@ -8,21 +8,31 @@
 </head>
 <body class="body-index2">
     <%- include('../partials/_navbar.ejs') %>
-    <!-- <a href="/auth/sign-out">Sign Out</a> -->
     <div class="all-tasks-body">
+       
         <div class="all-tasks-header">
     <h1>TODAY'S TASKS!</h1>
 
-    <a href="/users/<%=user._id%>/tasks/new">Add New Task</a>
+    <a class="add-task-link" href="/users/<%=user._id%>/tasks/new">Add New Task</a>
         </div>
     <ul>
         <%tasks.forEach((task)=>{%>
-        <li>
-            <a href="/users/<%= user._id%>/tasks/<%= task._id%>">
-                <%= task.title%> - <%= task.date%>
-            </a>
-        </li>
+        <li class="task-added">
+            <label class="task-label">
+            <input type="checkbox" 
+                   name="task-<%= task._id %>" 
+                   id="task-<%= task._id %>" 
+                   class="task-checkbox"
 
+                   <% if (task.completed) { %> checked <% } %> 
+                   data-task-id="<%= task._id %>" />
+                <a class="task-title" href="/users/<%= user._id %>/tasks/<%= task._id %>">
+
+                    <%= task.title %> - <%= task.date %>
+               
+                </a>
+            </label>
+        </li>
        <% })%>
     </ul>
 </div>

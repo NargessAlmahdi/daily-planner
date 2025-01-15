@@ -8,14 +8,17 @@
   </head>
   <body class= "body-in-up">
     <div class="signin-in">
-    <h1>LOG IN</h1>
-    <form action="/auth/sign-in" method="POST">
+    <h1 class="h1-signlog">LOG IN</h1>
+    <form class="form-signlog" action="/auth/sign-in" method="POST">
       <label for="username">Username:</label>
       <input type="text" name="username" id="username" />
+
       <label for="password">Password:</label>
       <input type="password" name="password" id="password" />
+      
       <button class="login2" type="submit">Log in</button>
-      <button class="signup2" type="submit">Sign up</button>
+      <p class="have-account" >Already have an account? <a class="sign" href="/auth/sign-up">Sign Up</a>
+      </p>
     </form>
   </div>
   </body>

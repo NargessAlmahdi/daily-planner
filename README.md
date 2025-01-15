@@ -1,97 +1,51 @@
-# MEN Stack Starter Template with Session Authentication
+ # daily-planner
 
-Welcome to the MEN Stack Starter Template! This template provides a foundational setup for building web applications using MongoDB, Express.js, and Node.js, complete with session authentication. This is ideal for students looking to kickstart their development projects.
+_A user-friendly daily planner designed to help you organize and track your tasks. Effortlessly add, edit, and delete tasks, and mark them as complete with a simple cross-off as you go._
 
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [Clone the Repository](#clone-the-repository)
-- [Installation](#installation)
-- [Environment Setup](#environment-setup)
-- [Running the Application](#running-the-application)
-- [Removing Git and Creating Your Own Repo](#removing-git-and-creating-your-own-repo)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
 
-## Prerequisites
+![Screenshot or Logo](/public/images/planner.png)  
 
-Before you begin, ensure you have the following installed on your machine:
-- [Node.js](https://nodejs.org/) (LTS or later)
-- [MongoDB](https://www.mongodb.com/) (make sure it's running)
-- [Git](https://git-scm.com/) (for cloning the repository)
+----------
 
-## Clone the Repository
+## Getting Started
 
-To clone this repository, open your terminal and run:
+### Play the Game
 
-```bash
-git clone https://github.com/SEB-1-Bahrain/instructor-men-auth.git men-stack-starter-template
-```
+[Deployed Game Link](https://nargessalmahdi.github.io/Whack-A-Mole/)
 
-## Installation
-Navigate into the cloned directory:
-```bash
-cd men-stack-starter-template
-```
+### How to Play
 
-Then, install the necessary dependencies:
+1. Click "START" to begin
+2. You have 30 seconds to hit the moles
+3. Each mole you hit earns you 10 points
+4. Try to set the new high score!
 
-```bash
-npm i
-```
+### Planning Materials
 
-## Environment Setup
-```plaintext
-MONGODB_URI=atlas_db_uri
-SESSION_SECRET=your_secret_key
-SALT_ROUNDS=10
-```
-Replace `atlas_db_uri` with your desired database name and `your_secret_key` with a secure key.
+[View Planning Documents](https://trello.com/b/rAomHBEU/whack-a-mole)
 
-## Removing Git and Creating Your Own Repo
-To remove the existing Git history and create your own repository:
+----------
 
-1. Remove the existing .git folder:
-  ```bash
-  rm -rf .git
-  ```
-2. Initialize a new Git repository:
-  ```bash
-  git init
-  ```
-3. Add all files to the new repository:
-  ```bash
-  git add .
-  ```
-4. Commit the changes
-   ```bash
-   git commit -m "Initial commit"
-   ``` 
-5. Create a new repository on GitHub (or any other platform) and follow the instructions to push your local repository.
-  Make a new repository on [GitHub](https://github.com/) named `<your-project-name>`
-  Now link your local project to your remote GitHub repo:
-  ```bash
-  git remote add origin https://github.com/<github-username>/men-stack-relating-data-lab-cookbook.git
-  git push origin main
-  ```
+## Attributions
 
-> 🚨 Do not copy the above command. It will not work. Your GitHub username will replace `<github-username>` (including the `<` and `>`) in the URL above.
+-   [Ranchers Font](https://fonts.google.com/share?selection.family=Ranchers)
+-   [Poppins Font](https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900)
+-   [Background Music](https://www.youtube.com/watch?v=pXdrz1pB35Q)
 
-## Running the application
-```bash
-npm run dev
-```
+----------
 
-## Features
-- User registration and login with session management
-- Basic CRUD operations
-- Modular file structure
-- Example routes and controllers
-- Basic user model setup
-- Middleware for templates and authorization
-- Basic authentication flow
+## Technologies Used
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white&style=flat-square)  
+![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white&style=flat-square)  
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)
 
-Happy Coding!
+----------
+
+## Next Steps
+
+- Add more sound effects to give the authentic feel of arcade games.
+- Implement a multiplayer mode.
+- Create a mobile-friendly interface.
+- Add different difficulty levels.
+----------

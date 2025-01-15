@@ -6,24 +6,29 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <title><% task.title %></title>
 </head>
-<body>
+<body class="body-index2">
     <%- include('../partials/_navbar.ejs') %>
+    <div class="show-body">
+    <div class="show-header">
     <h1><%= task.title%> - <%=task.date%></h1>
+
+    <div class="delete-update-button">
     <% if (task.details) { %>
-        <p>Details: <%= task.details %></p>
-        <% } %>
-    
-           <!-- UPDATE APP -->
-    <a href="/users/<%= user._id %>/tasks/<%= task._id %>/edit">
-        Edit Task
-      </a>
-  
-      <!-- DELETE APP -->
-      <form
-      action="/users/<%= user._id %>/tasks/<%= task._id %>?_method=DELETE"
-      method="POST"
-      >
-        <button type="submit">Delete Task</button>
+
+        <a class="edit-task"href="/users/<%= user._id %>/tasks/<%= task._id %>/edit">
+            Edit Task
+        </a>
+        
+        <form
+        action="/users/<%= user._id %>/tasks/<%= task._id %>?_method=DELETE"
+        method="POST"
+        >
+        <button class="delete-task" type="submit">Delete Task</button>
+    </div>
+    </div>
+    <p>Details: <%= task.details %></p>
+    <% } %>
+</div>
  </form>
 </body>
 </html>

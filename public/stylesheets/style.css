@@ -5,12 +5,8 @@
 
 
 body{
-
     background-color: #487ad3;
-    /* display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw; */
+
 }
 
 
@@ -47,6 +43,9 @@ body{
     flex-direction: column;
     padding-left: 110px;
     padding-top: 220px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-575%, 0%);
 }
 
 .auth-links {
@@ -111,9 +110,9 @@ body{
     background-size: cover;
     width: 600px;
     height: 200px;
+    
   }
 
-  .signin-in,
   .signup-up {
     display: flex;
     flex-direction: column;
@@ -121,9 +120,10 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
+
   }
   
-  h1 {
+  .h1-signlog {
     font-family: 'AcuminVariableConcept', sans-serif;
     font-variation-settings: "wght" 900, "wdth" 50;
     font-size: 90px;
@@ -138,7 +138,7 @@ body{
     white-space: nowrap;
   }
   
-  form {
+  .form-signlog {
     font-family: 'poppins';
     font-weight: bold;
     font-size: 23px;
@@ -156,69 +156,60 @@ body{
   }
   
   input {
+    font-family: 'poppins';
+    font-size: 15px;
     border: 1px solid rgb(182, 182, 182);
     padding: 15px;
     border-radius: 10px;
   }
   
-  .signup, .login {
+
+  
+  .signup{
     font-family: 'poppins';
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
     margin: 15px 0;
     font-size: 1.1em;
-  }
-  
-  .signup{
     top: 20%;
     left: 50%;
     transform: translate(0%, 30%);
     background-color: #ff7f02;
     border: 2px solid #2e2d33;
     color: #2e2d33;
+    
   }
 
   .signup:hover{
     background-color: #ffffff;
-
   }
 
-  .login{
-    background-color: #f7e807;
-    border: 2px solid #2e2d33;
+.have-account{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 20px;
     color: #2e2d33;
-  }
+    margin: 0%;
+    padding-top: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(15%, -50%);
+    
 
-.login:hover{
-    background-color: #ffffff;
 }
+
 
 
   /* VIEWS/AUTH/SIGN-IN.EJS */
 
-  .signup2, .login2 {
+  .login2{
     font-family: 'poppins';
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
     margin: 15px 0;
     font-size: 1.1em;
-  }
-  
-  .signup2{
-    
-    background-color: #ff7f02;
-    border: 2px solid #2e2d33;
-    color: #2e2d33;
-  }
-
-  .signup2:hover{
-    background-color: #ffffff;
-
-  }
-
-  .login2{
     top: 20%;
     left: 50%;
     transform: translate(0%, 30%);
@@ -233,7 +224,7 @@ body{
 
 
 
-/* VIEWS/SHOW.EJS */
+/* TASKS/INDEX.EJS */
 
 .body-index2{
     background-image: url('/images/tasksheet.png');
@@ -242,3 +233,289 @@ body{
     width: 600px;
     height: 200px;
   }
+
+  .all-tasks-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 90px;
+    }
+
+h1{
+    font-family: 'AcuminVariableConcept', sans-serif;
+    font-variation-settings: "wght" 900, "wdth" 50;
+    font-size: 90px;
+    color: #2e2d33;
+    white-space: nowrap;
+}
+
+  
+  .all-tasks-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 630px;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .add-task-link {
+    font-family: 'poppins';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    width: 10em;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f7e807;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+  }
+  
+  .add-task-link:hover {
+    background-color: #ffffff;
+  }
+
+  ul {
+    list-style-type: none; 
+    padding-left: 0;
+  }
+
+    li {
+    list-style-type: none;
+  }
+
+  .task-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #2e2d33;
+    text-decoration: none; 
+    white-space: nowrap;  
+    display: inline-block;  
+}
+
+.task-added{
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -180%);
+}
+
+.task-checkbox {
+    margin-right: 30px;
+    vertical-align: middle; 
+}
+
+.task-checkbox:checked + .task-title {
+    text-decoration: line-through; 
+    color: #888;
+}
+
+  .task-title:hover{
+    font-weight: bold;
+  }
+
+  .task-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+/* TASKS/NEW.EJS */
+
+ 
+.all-tasks-body2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+  }
+
+  .all-tasks-header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 640px;
+    align-items: center;
+    width: 90%;
+  }
+
+  .add-task-link2 {
+    font-family: 'poppins';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px;
+    border-radius: 10px;
+    width: 10em;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f7e807;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+  }
+  
+  .add-task-link2:hover {
+    background-color: #ffffff;
+  }
+
+  .add-new-form{
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 23px;
+    color: #2e2d33;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-39%, -45%);
+    width: 20em;
+    height: 50%;
+  }
+
+  /* TASKS/EDIT */
+  .edit-task-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+  }
+
+.edit-task-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 780px;
+    align-items: center;
+    width: 90%;
+}
+
+.update-task{
+    font-family: 'poppins';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px;
+    border-radius: 10px;
+    width: 10em;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f7e807;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+}
+
+.update-task:hover{
+    background-color: #ffffff;
+}
+
+
+.task-edit{
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 23px;
+    color: #2e2d33;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-39%, -45%);
+    width: 20em;
+    height: 50%;
+}
+
+/* TASKS/SHOW.EJS */
+.show-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+}
+.show-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 130px;
+    align-items: center;
+    width: 90%;
+}
+
+.delete-update-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    width: 90%;
+    white-space: nowrap;
+}
+
+.delete-task{
+    font-family: 'poppins';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px;
+    border-radius: 10px;
+    width: 10em;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #ff7f02;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+}
+
+.delete-task:hover{
+    background-color: #ffffff;
+}
+
+.edit-task{
+    font-family: 'poppins';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px;
+    border-radius: 10px;
+    width: 10em;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f7e807;
+    border: 2px solid #2e2d33;
+    color: #2e2d33;
+}
+
+.edit-task:hover{
+    background-color: #ffffff;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #2e2d33;
+    text-decoration: none; 
+    white-space: nowrap;  
+    display: inline-block;  
+    margin-left: 630px;
+    top: 50%;
+    left: 50%;
+    transform: translate(7%, -180%)
+}

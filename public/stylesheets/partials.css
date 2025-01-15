@@ -45,15 +45,34 @@
     color: #2e2d33;
   }
 
+  .sign:hover{
+    font-weight: bold;
+  }
+  
   .log{
     text-decoration: none !important;
     color: #2e2d33;
   }
   
-  .sign:hover{
-    font-weight: bold;
-  }
-
   .log:hover{
     font-weight: bold;
   }
+
+
+ .tasks{
+    text-decoration: none !important;
+    color: #2e2d33;
+ } 
+
+ .tasks:hover{
+    font-weight: bold;
+ }
+
+ .signout{
+    text-decoration: none !important;
+    color: #2e2d33;
+ }
+
+ .signout:hover{
+    font-weight: bold;
+ }

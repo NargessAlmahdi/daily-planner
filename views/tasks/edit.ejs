@@ -6,12 +6,16 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Editing <% task.title %></title>
 </head>
-<body>
+<body class="body-index2">
     <%- include('../partials/_navbar.ejs') %>
+   
+    <div class="edit-task-body">
+        <div class="edit-task-header">
     <h1>Edit Task </h1>
-        <h2><%= task.title%> - <%= task.date%></h2>
     <form action="/users/<%= user._id %>/tasks/<%= task._id %>?_method=PUT" method="POST">
-
+        <button class="update-task" type="submit">Update Task</button>
+    </div>
+    <div class="task-edit">
     <label for="title">Task Title:</label>
     <input 
     type="text"
@@ -37,10 +41,9 @@
         type="checkbox" 
         name="priority" 
         id="priority" <%if (task.priority){%>checked<%} %> >
-
-        <button type="submit">Update Task</button>
+        </div>
 
 </form>
-
+</div>
 </body>
 </html>
